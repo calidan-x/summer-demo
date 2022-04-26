@@ -7,6 +7,6 @@ export class HelloController {
   @Get
   @ApiDoc('获取欢迎字符串')
   hello() {
-    return 'Hello Summer ~~~'
+    return 'Hello Summer!'
   }
 }
