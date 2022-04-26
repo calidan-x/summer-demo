@@ -3,6 +3,6 @@ import './auto-imports'
 export { handler }
 
 summerStart({
-  before(config) {},
+  async before(config) {},
   after(config) {}
 })
