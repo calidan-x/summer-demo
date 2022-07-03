@@ -16,8 +16,8 @@ export class HelloController {
 
   @Post
   @ApiDoc('向HiService打招呼')
-  sayHelloToHiService() {
-    this.hiService.sayHi()
+  async sayHelloToHiService() {
+    await this.hiService.sayHi()
   }
 
   @Get('/error')
