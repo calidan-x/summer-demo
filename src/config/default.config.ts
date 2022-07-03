@@ -13,7 +13,7 @@ export const SWAGGER_CONFIG: SwaggerConfig = {
 
 export const RPC_CONFIG: RpcConfig = {
   client: {
-    RPC_SOURCE: {
+    HI_SOURCE: {
       url: 'https://demo.summerjs.com/hi-service',
       accessKey: 'xxxxx'
     }
