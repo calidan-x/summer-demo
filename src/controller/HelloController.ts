@@ -1,5 +1,5 @@
 import { HiService } from './../rpc/HiService'
-import { AutoInject, Controller, Get, Post } from '@summer-js/summer'
+import { AutoInject, Body, Controller, Get, Post, Query } from '@summer-js/summer'
 import { ApiDoc, ApiDocGroup } from '@summer-js/swagger'
 
 @Controller
@@ -24,5 +24,11 @@ export class HelloController {
   @ApiDoc('错误的请求')
   error() {
     throw new Error('error')
+  }
+
+  @Get('/error')
+  @ApiDoc('错误的请求')
+  error2(@Query p: string) {
+    return p
   }
 }
