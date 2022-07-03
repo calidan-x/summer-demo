@@ -22,7 +22,7 @@ export class HelloController {
   }
 
   @Get('/error')
-  @ApiDoc('向HiService打招呼')
+  @ApiDoc('错误的请求')
   error() {
     throw new Error('error')
   }
