@@ -20,4 +20,10 @@ export class HelloController {
     console.log('~~~~~~')
     this.hiService.sayHi('hi')
   }
+
+  @Get('/error')
+  @ApiDoc('向HiService打招呼')
+  error() {
+    throw new Error('error')
+  }
 }
