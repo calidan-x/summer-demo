@@ -17,8 +17,7 @@ export class HelloController {
   @Post
   @ApiDoc('向HiService打招呼')
   sayHelloToHiService() {
-    console.log('~~~~~~')
-    this.hiService.sayHi('hi')
+    this.hiService.sayHi()
   }
 
   @Get('/error')
