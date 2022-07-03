@@ -4,17 +4,18 @@
   "description": "",
   "keywords": [],
   "scripts": {
-    "dev": "summer -s --env local",
-    "test": "summer -t --env test",
-    "build": "summer -b --env prod",
+    "dev": "summer serve --env local",
+    "test": "summer test --env test",
+    "build": "summer build --env prod",
     "start": "node --enable-source-maps ./build/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@summer-js/cli": "^0.0.11",
-    "@summer-js/summer": "^0.0.11",
-    "@summer-js/swagger": "0.0.11",
-    "@summer-js/test": "^0.0.11"
+    "@summer-js/cli": "^0.0.35",
+    "@summer-js/summer": "^0.0.35",
+    "@summer-js/swagger": "0.0.35",
+    "@summer-js/test": "^0.0.35",
+    "aws-xray-sdk": "^3.3.6"
   }
 }
