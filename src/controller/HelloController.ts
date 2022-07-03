@@ -26,7 +26,7 @@ export class HelloController {
     throw new Error('error')
   }
 
-  @Get('/error')
+  @Get('/error2')
   @ApiDoc('错误的请求')
   error2(@Query p: string) {
     return p
